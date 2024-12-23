@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +9,7 @@
 header {
   background-color: black;
   padding: 30px 30px;
+  border: 2px solid black;
 }
 
 nav {
@@ -196,11 +199,39 @@ nav .buttons .sign-in {
   font-weight: 500;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
+  nav .topbar__svg-and-logo {
+    width: 37%;
+  }
   .submit,
   .sign-in {
     display: none;
   }
+  .search-section {
+    height: 75vh;
+  }
+  .search-section div h1 {
+    font-size: 3.5rem;
+  }
+  .search-section div input {
+    width: 70%;
+  }
+  .cards-section {
+    overflow: hidden;
+    gap: 1rem;
+  }
+  .cards-section .card {
+    margin-left: 0rem;
+  }
+  .cards-section .card .text-div p,
+  .cards-section .card .text-div a {
+    font-size: 17px;
+  }
+  footer {
+    overflow: hidden;
+  }
+}
+@media (max-width: 650px) {
   .search-section div h1 {
     font-size: 2rem;
   }
@@ -252,6 +283,9 @@ nav .buttons .sign-in {
   }
 }
 @media (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
   nav .topbar__svg-and-logo .logo-text a {
     font-size: 1.1rem;
   }
@@ -275,7 +309,10 @@ nav .buttons .sign-in {
     margin-bottom: 1rem;
     text-wrap: balance;
   }
-  .footer .abstract p, .footer .resources p, .footer .community p, .footer .company p {
+  .footer .abstract p,
+  .footer .resources p,
+  .footer .community p,
+  .footer .company p {
     font-size: 1rem;
   }
 }

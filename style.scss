@@ -1,8 +1,12 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 @import 'sass-files/header';
 @import 'sass-files/navabr';
@@ -13,12 +17,3 @@
 // media-querry section
 
 @import 'sass-files/media';
-
-
-
-
-
-
-
-
-

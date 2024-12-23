@@ -1,9 +1,52 @@
-@media (max-width: 650px) {
+@media (max-width: 900px) {
+
+    nav .topbar__svg-and-logo {
+        width: 37%;
+    }
 
     .submit,
     .sign-in {
         display: none;
     }
+
+    .search-section {
+        height: 75vh;
+
+        div {
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            input {
+                width: 70%;
+            }
+        }
+    }
+
+    .cards-section {
+        overflow: hidden;
+        gap: 1rem;
+
+        .card {
+            margin-left: 0rem;
+
+            .text-div {
+
+                p,
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    footer {
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width: 650px) {
 
     .search-section {
         div {
@@ -66,13 +109,18 @@
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+
     nav .topbar__svg-and-logo .logo-text a {
         font-size: 1.1rem;
     }
 
     .search-section {
         height: 50vh;
+
         div {
             input {
                 padding: 12px;
@@ -97,7 +145,10 @@
         text-wrap: balance;
     }
 
-    .footer .abstract p, .footer .resources p, .footer .community p, .footer .company p {
+    .footer .abstract p,
+    .footer .resources p,
+    .footer .community p,
+    .footer .company p {
         font-size: 1rem;
     }
 }
