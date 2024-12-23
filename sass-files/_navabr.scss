@@ -1,0 +1,65 @@
+nav {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+
+    .topbar__svg-and-logo {
+        width: 30%;
+        display: flex;
+        align-items: center;
+
+        .svg {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+
+            svg {
+                background-color: black;
+                width: 180px;
+            }
+        }
+
+        .logo-text {
+            width: 80%;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 400;
+                font-size: 1.6rem;
+                font-family: 'GT America Standard', sans-serif;
+            }
+        }
+    }
+
+    .buttons {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+
+        .submit {
+            width: 240px;
+            height: 160%;
+            color: white;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .sign-in {
+            width: 130px;
+            height: 160%;
+            border-radius: 10px;
+            background-color: #4C5FD5;
+            color: white;
+            font-size: 25px;
+            border: none;
+        }
+    }
+}

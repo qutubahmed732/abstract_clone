@@ -1,0 +1,31 @@
+.search-section {
+    width: 100%;
+    height: 65vh;
+    background-color: #dadbf0;
+
+    div {
+        position: relative;
+        top: 25%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 400;
+            font-family: sans-serif;
+        }
+
+        input {
+            width: 55%;
+            padding: 20px;
+            background-color: white;
+            outline: none;
+            border-radius: 5px;
+            font-size: 1.3rem;
+        }
+    }
+}

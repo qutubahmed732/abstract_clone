@@ -1,0 +1,49 @@
+.footer {
+    background-color: black;
+    color: white;
+    height: auto; /* Adjust height dynamically */
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack content vertically for smaller screens */
+    padding: 1rem;
+  
+    .inner-container {
+      width: 60%; /* Full width for smaller screens */
+      display: flex;
+      flex-wrap: wrap; /* Wrap content for responsiveness */
+      gap: 1rem; /* Reduced gap for smaller screens */
+      margin: 0 0 auto 0; /* Center align */
+    }
+  
+    .abstract,
+    .resources,
+    .community,
+    .company {
+      flex: 1; /* Equal width for all sections */
+      margin-top: 1rem; /* Adjusted margin for responsiveness */
+  
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-top: 9px;
+        font-size: 1.2rem; /* Slightly smaller text for smaller screens */
+      }
+  
+      h3 {
+        margin-top: 15px;
+      }
+    }
+  
+    .small-container {
+      align-self: center; /* Center align for smaller screens */
+      margin-top: 1rem;
+      margin-left: auto;
+  
+      p {
+        margin-top: 14px;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+}
