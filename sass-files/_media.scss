@@ -1,12 +1,7 @@
-@media (max-width: 900px) {
+@media (max-width: 900px) or (min-width: 900px) {
 
     nav .topbar__svg-and-logo {
         width: 37%;
-    }
-
-    .submit,
-    .sign-in {
-        display: none;
     }
 
     .search-section {
@@ -23,28 +18,27 @@
         }
     }
 
-    .cards-section {
-        overflow: hidden;
-        gap: 1rem;
-
-        .card {
-            margin-left: 0rem;
-
-            .text-div {
-
-                p,
-                a {
-                    font-size: 17px;
-                }
-            }
-        }
-    }
-
     footer {
         overflow: hidden;
     }
 }
 
+@media (max-width: 900px) {
+    
+    nav:has(.buttons) .submit, .sign-in{
+        display: none;
+    }
+
+    nav:has(i) i.fa-bars {
+        display: flex;
+        color: white;
+        font-size: 40px;
+    }
+
+    .hidden-buttons {
+        display: none;
+    }
+}
 
 @media (max-width: 650px) {
 
@@ -110,10 +104,6 @@
 }
 
 @media (max-width: 450px) {
-    body {
-        overflow-x: hidden;
-    }
-
     nav .topbar__svg-and-logo .logo-text a {
         font-size: 1.1rem;
     }
