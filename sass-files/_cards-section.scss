@@ -3,14 +3,22 @@
     margin: 10rem auto;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    
+    @media(min-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .card {
-    margin-left: 7rem;
+    margin-left: 5rem;
     display: flex;
     width: 30rem;
+    
+    @media(min-width: 1000px){
+        margin-inline: auto;
+    }
 
     .image-div {
         width: 20%;
